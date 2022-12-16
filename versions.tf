@@ -3,7 +3,7 @@ terraform {
     organization = "Tatimost"
 
     workspaces {
-      name = "Terraform-lab-env-v1"
+      name = "Terraform-3-tier-aws"
     }
   }
   required_version = ">= 0.15"
