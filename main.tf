@@ -20,7 +20,7 @@ module "database" {
     namespace = var.namespace
 
     vpc = module.networking.vpc
-    sg = module.networking.vpc
+    sg = module.networking.sg
 }
 module "networking" {
     source = "./modules/networking"
