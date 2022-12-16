@@ -27,7 +27,7 @@ resource "aws_launch_template" "webserver" {
   image_id      = data.aws_ami.ubuntu.id
   instance_type = "t2.micro"
   user_data     = data.cloudinit_config.config.rendered
-  key_name      = var.key_name
+  key_name      = var.ssh_keypair
   iam_instance_profile {
     name = module.iam_instance_profile.name
   }
