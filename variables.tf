@@ -1,5 +1,6 @@
 variable "namespace" {
   description = "The project namespace to use for unique resource naming"
+  default = "my-cool-project"
   type        = string
 }
 
