@@ -11,9 +11,7 @@ write_files:
           "netloc": "${hostname}:${port}"
         }
 runcmd:
-curl -sL https://api.github.com/repos/terraform-in-action/vanilla-webserver-
-       ➥ src/releases/latest | jq -r ".assets[].browser_download_url" |
-       ➥ wget -qi -
+curl -sL https://api.github.com/repos/terraform-in-action/vanilla-webserver-src/releases/latest | jq -r ".assets[].browser_download_url" wget -qi -
   - unzip deployment.zip
   - ./deployment/server
 packages:
