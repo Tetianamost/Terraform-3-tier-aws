@@ -15,6 +15,6 @@ resource "aws_db_instance" "database" {
   username               = "admin"
   password               = random_password.password.result
   db_subnet_group_name   = var.vpc.database_subnet_group          
-  vpc_security_group_ids = [var.sg.external.id]                      
+  vpc_security_group_ids = [aws_security_group.rds.id]                     
   skip_final_snapshot    = true
 }
