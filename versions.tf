@@ -1,4 +1,11 @@
 terraform {
+   cloud {
+    organization = "Tatimost"
+
+    workspaces {
+      name = "Terraform-lab-env-v1"
+    }
+  }
   required_version = ">= 0.15"
   required_providers {
     aws = {

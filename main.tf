@@ -1,12 +1,3 @@
-terraform {
-  cloud {
-    organization = "Tatimost"
-
-    workspaces {
-      name = "Terrafor-lab-env-v1"
-    }
-  }
-}
 module "autoscaling" {
     source = "./modules/autoscaling"
     namespace = var.namespace
