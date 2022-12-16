@@ -1,7 +1,7 @@
 variable "namespace" {
     type = string
 }
-variable "ssh-keypair" {
+variable "ssh_keypair" {
 type = string
 }
 variable "vpc" {
